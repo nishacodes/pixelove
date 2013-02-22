@@ -58,7 +58,7 @@ class PinsController < ApplicationController
   # PUT /pins/1
   # PUT /pins/1.json
   def update
-    @pin = Pin.find(params[:id])
+    @pin = current_user.pins.find(params[:id])
 
     respond_to do |format|
       if @pin.update_attributes(params[:pin])
@@ -74,7 +74,7 @@ class PinsController < ApplicationController
   # DELETE /pins/1
   # DELETE /pins/1.json
   def destroy
-    @pin = Pin.find(params[:id])
+    @pin = current_user.pins.find(params[:id])
     @pin.destroy
 
     respond_to do |format|
