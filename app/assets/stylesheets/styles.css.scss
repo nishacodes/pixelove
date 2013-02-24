@@ -3,12 +3,15 @@
 */
 
 $navbarBackground: white;
+$navbarSearch: 25%;
+
+
 
 @import 'bootstrap';
 
 
 body {
-	padding-top: 80px;
+	padding-top: 100px;
 }
 
 @import 'bootstrap-responsive';
@@ -21,30 +24,103 @@ body {
 	}
 }
 
+/* HEADER STYLES */
+
+.logo {
+	width: 125px;	
+}
+
+#categories {
+	border-top-style: solid;
+	border-color:  #d4cd07;
+	border-top-width: 4px;
+	border-top-opacity: 1;
+	opacity: 0.8;
+	background-color: white;
+	margin-left: 0px;
+}
+
+
+/* BOX STYLES */
+.icon-tag {
+
+}
+
+h3.title {
+	font-size: 14px;
+	font-family: open sans;
+	padding: 0px 10px 0px 10px;
+	line-height: 1em;
+
+}
+
+#title {
+	width: 70%;
+	position: relative;
+	float:left;
+
+
+}
+.actionbuttons {
+	
+	position: relative;
+	float:right;
+	margin-top: 5px;
+	margin-right: 10px;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: right;
+	z-index: 1;
+	width: 20%;
+}
+
+#titlesection {
+	width: 100%;
+	height: 40px;
+
+}
+
+.screenshot {
+	border-color:  #d4cd07;
+	border-top-width: 3px;
+	border-top-opacity: 1;
+	border-top-style: solid;
+}
+
+.pindetails {
+	width: 100%;
+	min-height: 60px;
+}
+
+.usericon {
+	margin: 10px;
+	height: 100%;
+	position: relative;
+	float:right;
+	display:block;
+}
+
+.profilephoto {
+	width: 40px;
+	height: 40px;
+	background-color: #999;
+}
+
 /* Required for Jquery Masonry */
  
 .box {
-	margin: 5px;
-	padding: 5px;
+	margin: 15px;
+	padding: 0px;
 	font-size: 11px;
 	line-height: 1.4em;
 	float: left;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	box-shadow: 1px 1px 10px #444;
-	width: 214px;
+	box-shadow: 1px 1px 10px #888;
+	width: 345px;
 }
 
 .box img {
 	display: block;
 	width: 100%;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-
 }
 
-.description {
-	margin: 10px 0 5px;
-}
+
