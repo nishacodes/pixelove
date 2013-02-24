@@ -15,11 +15,11 @@
 		</div>
 
 		<div class="pindetails">
-			<div class="usericon">
+			
 				<div class="profilephoto">
 				</div>
 			 	<%= pin.user.name %>
-			</div>
+			
 			<% if current_user == pin.user %>
 				<p>
 					<%= link_to 'Edit', edit_pin_path(pin) %>
