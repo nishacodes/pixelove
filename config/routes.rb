@@ -1,5 +1,8 @@
 Pixelove::Application.routes.draw do
   
+  resources :categories
+
+
   resources :pins
 
 
