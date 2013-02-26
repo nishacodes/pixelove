@@ -28,6 +28,7 @@ body {
 
 .logo {
 	width: 125px;	
+	padding-left: 11px;
 }
 
 #categories {
@@ -38,8 +39,23 @@ body {
 	opacity: 0.8;
 	background-color: white;
 	margin-left: 0px;
+	height: 40px;
+
 }
 
+.categories {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+}
+
+.spacer {
+
+	vertical-align: bottom;
+	padding-top: 13px;
+}
 
 /* BOX STYLES */
 .icon-tag {
@@ -62,16 +78,23 @@ h3.title {
 
 }
 .actionbuttons {
-	
 	position: relative;
 	float:right;
 	margin-top: 5px;
 	margin-right: 10px;
 	font-size: 24px;
 	font-weight: 600;
-	text-align: right;
 	z-index: 1;
-	width: 20%;
+	visibility: hidden;
+}
+
+i.icon-heart {
+	margin-top: 10px;
+	
+}
+
+.box:hover .actionbuttons {
+	visibility: visible;
 }
 
 #titlesection {

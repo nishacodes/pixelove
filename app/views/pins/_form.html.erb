@@ -4,7 +4,9 @@
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
 
   <%= f.input :image, label: "Upload an image" %> 
-  <%= f.input :description, as: :text, input_html: { rows: "3"} %>
+  <%= f.input :description, as: :text, label: "Title", input_html: { rows: "3"} %>
+  <%= f.input :tag_list, label: "Tags (separated by comma)" %>	
+ 
  
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary" %>

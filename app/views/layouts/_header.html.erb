@@ -30,18 +30,25 @@
         </div>
     </div>
     <div id="categories">
-        <div class="container">
-            <ul class="nav pull-left">
-                <li> <%= link_to 'PAGE LAYOUTS'%> </li> 
-                <li>  <%= link_to 'USER FLOWS'%> </li>
-                <li>  <%= link_to 'COMPONENTS'%></li>
-                <li>  <%= link_to 'STYLES'%> </li>
-                <li>  <%= link_to 'INTERACTIVE'%> </li>
-            </ul>  
+            <div class="container">
+                <ul class="nav categories">
+                    <li> <%= link_to 'PAGE LAYOUTS'%>  </li>
+                    <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
+                    <li>  <%= link_to 'USER FLOWS'%>  </li>
+                    <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
+                    <li>  <%= link_to 'COMPONENTS'%> </li>
+                    <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
+                    <li>  <%= link_to 'STYLES'%> </li>
+                    <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
+                    <li>  <%= link_to 'INTERACTIVE'%> </li>
+                </ul>  
+            
+            <!-- SEARCH BAR 
             <form class="navbar-search pull-right">
                     <input type="text" class="search-query" placeholder="What are you looking for?">
             </form>
-        </div>
+            -->
+            </div>
     </div>   
 
 </div>

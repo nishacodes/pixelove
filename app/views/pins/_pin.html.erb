@@ -7,6 +7,7 @@
 				</div>
 				<div class="actionbuttons">
 						+
+						<i class="icon-heart"></i>
 				</div>
 		</div>
 
@@ -15,6 +16,10 @@
 		</div>
 
 		<div class="pindetails">
+			<p class="tag_list">
+				<i class="icon-tag"></i>
+				<%= raw pin.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
+			</p>
 			<div class="usericon">
 				<div class="profilephoto">
 				</div>
@@ -25,9 +30,7 @@
 					<%= link_to 'Edit', edit_pin_path(pin) %>
 					<%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
 				</p>
-				<p>
-					<i class="icon-tag"></i>
-				</p>
+				
 			<% end %>
 		</div>
 </div>

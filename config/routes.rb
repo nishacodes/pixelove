@@ -1,15 +1,14 @@
 Pixelove::Application.routes.draw do
   
   resources :categories
-
-
   resources :pins
 
 
   devise_for :users
 
   get 'about' => 'pages#about'
-
+  get 'tags/:tag', to: 'pins#index', as: :tag
+  
   root :to => 'pins#index'
   
 
