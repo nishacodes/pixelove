@@ -1,6 +1,7 @@
 	class Pin < ActiveRecord::Base
-  attr_accessible :description, :image, :tag_list
+  attr_accessible :description, :image, :tag_list, :category_list, :fav
   acts_as_taggable
+  acts_as_taggable_on :tags, :categories, :fav
 
   validates :description, presence: true
   validates :user_id, presence: true

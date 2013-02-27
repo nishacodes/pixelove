@@ -135,12 +135,36 @@ h3.title {
 .actionbuttons {
 	position: relative;
 	float:right;
-	margin-top: 5px;
-	margin-right: 10px;
+	margin-top: 6px;
+	margin-right: 0px;
 	font-size: 24px;
 	font-weight: 600;
 	z-index: 1;
+	width: 72px;
 	visibility: hidden;
+}
+
+
+.addbutton {
+	width: 28px;
+	display: inline-block;
+	float: left;
+	opacity: 0.6;
+	
+}
+
+
+.heartbutton {
+	width: 28px;
+	display: inline-block;
+	float: left;
+	padding-left: 7px;
+	opacity: 0.6;
+	
+}
+
+.heartbutton:hover, .addbutton:hover {
+	opacity: 1;
 }
 
 .leftarrow  {
@@ -236,7 +260,14 @@ a:hover {
 	color: #d4cd07;
 }
 
-
+.categoryname {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background-color: #e2d005;
+	color: white;
+	padding: 4px;
+}
 /* Required for Jquery Masonry */
  
 .box {

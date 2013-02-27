@@ -32,15 +32,17 @@
     <div id="categories">
             <div class="container">
                 <ul class="nav categories">
-                    <li> <%= link_to 'PAGE LAYOUTS'%>  </li>
+                    <li> <%= link_to 'PAGE LAYOUTS', tag_path('page layouts')%>  </li>
                     <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
-                    <li>  <%= link_to 'USER FLOWS'%>  </li>
+                    <li>  <%= link_to 'USER FLOWS', tag_path('user flows')%>  </li>
                     <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
-                    <li>  <%= link_to 'COMPONENTS'%> </li>
+                    <li>  <%= link_to 'COMPONENTS', tag_path('components')%> </li>
                     <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
-                    <li>  <%= link_to 'STYLES'%> </li>
+                    <li>  <%= link_to 'STYLES', tag_path('styles')%> </li>
                     <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
-                    <li>  <%= link_to 'INTERACTIVE'%> </li>
+                    <li>  <%= link_to 'INTERACTIVE', tag_path('interactive')%> </li>
+                    <li> <%= image_tag "spacer.png", class: "spacer" %> </li>
+                    <li>  <%= link_to (image_tag 'favs.png'), tag_path('interactive')%> </li>
                 </ul>  
             
             <!-- SEARCH BAR 
