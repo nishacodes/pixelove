@@ -57,6 +57,61 @@ body {
 	padding-top: 13px;
 }
 
+
+/* HERO UNIT */
+
+.hero-unit {
+	background-color: white;
+	-moz-box-shadow: 0 0 5px 1px #b2b2b2;
+	-webkit-box-shadow: 0 0 5px 1px #b2b2b2;
+	box-shadow: 0 0 5px 1px #b2b2b2;
+	height: 120px;
+	padding: 20px;
+
+}
+
+.hero-unit h1 {
+	font-family: Courier, monospace;
+	font-size: 40px;
+	width: 80%;
+	display: inline-block;
+	float: left;
+	font-weight: 500;
+	margin-left: 10px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	line-height: 50px;
+}
+ 
+.button {
+	background-color: #d4cd07;
+	border: none;
+	width: 140px;
+	height: 35px;
+	font-family: open sans;
+	font-size: 24px;
+	font-weight: 600;
+	color: white;
+	margin-right: 25px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	position: relative;
+	float:right;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 10px 25px 10px 25px;
+	a { color: white;}
+}
+
+.button:hover {
+	background-color: #dfd814;
+	a {
+		text-decoration: none;
+		color:white;
+	}
+}
+
+
 /* BOX STYLES */
 .icon-tag {
 	opacity: 0.7;
