@@ -4,6 +4,7 @@
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
 
   <%= f.input :image, label: "Upload an image" %> 
+  <%= f.input :image, label: "Upload another image" %> 
   <%= f.input :description, as: :text, label: "Title", input_html: { rows: "3"} %>
   <%= f.input :tag_list, label: "Tags (separated by commas)" %>	
   <%= f.input :category_list, label: "Category", collection: [ "Page layouts", "User flows", "Components", "Styles", "Interactive"]  %>	

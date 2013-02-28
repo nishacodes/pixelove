@@ -29,6 +29,8 @@ body {
 .logo {
 	width: 125px;	
 	padding-left: 11px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #categories {
@@ -49,6 +51,7 @@ body {
 }
 
 .container {
+
 }
 
 .spacer {
@@ -68,16 +71,17 @@ body {
 	height: 120px;
 	padding: 20px;
 
+
 }
 
 .hero-unit h1 {
 	font-family: Courier, monospace;
-	font-size: 40px;
-	width: 80%;
+	font-size: 36px;
+	width: 70%;
 	display: inline-block;
 	float: left;
 	font-weight: 500;
-	margin-left: 10px;
+	margin-left: 20px;
 	margin-bottom: 40px;
 	letter-spacing: 1px;
 	line-height: 50px;
