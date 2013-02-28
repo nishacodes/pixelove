@@ -4,16 +4,11 @@ class PinsController < ApplicationController
   # GET /pins
   # GET /pins.json
   def index
-      if params[:tag]
-        @pins = Pin.tagged_with(params[:tag])
-      else
+    @pins = Pin.order("created_at desc")
 
-        @pins = Pin.order("created_at desc")
-
-        respond_to do |format|
-          format.html # index.html.erb
-          format.json { render json: @pins }
-      end
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @pins }
     end
   end
 
