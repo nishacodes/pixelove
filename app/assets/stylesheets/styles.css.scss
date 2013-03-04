@@ -11,8 +11,9 @@ $navbarSearch: 25%;
 
 
 body {
-	padding-top: 200px;
+	padding-top: 60px;
 	background-color: #FBFBFB;
+
 }
 
 @import 'bootstrap-responsive';
@@ -70,7 +71,7 @@ body {
 	background-color: white;
 	margin-left: 0px;
 	z-index: 10;
-	overflow: wrap;
+
 
 
 }
@@ -114,6 +115,12 @@ body {
 		text-decoration: none;
 		color:white;
 	}
+}
+
+/* SELECTED TAGS */
+
+.selectedtags {
+
 }
 
 

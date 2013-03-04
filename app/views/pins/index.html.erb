@@ -1,5 +1,18 @@
 <%= render 'pages/home' %>
 
-<div id="pins">
-  <%= render @pins %>
-</div>
+<% if params[:tag] %>
+     <%= render 'pins/selectedtag' %> 
+     
+				<div id="pins">
+				  <%= render @pins %>
+				</div>
+       
+
+<% else %>
+        
+
+				<div id="pins">
+				  <%= render @pins %>
+				</div>
+
+<% end %>
