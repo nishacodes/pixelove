@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130304215705) do
+ActiveRecord::Schema.define(:version => 20130305011230) do
 
   create_table "categories", :force => true do |t|
     t.string   "description"
@@ -31,6 +31,16 @@ ActiveRecord::Schema.define(:version => 20130304215705) do
   end
 
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
+
+  create_table "screenshots", :force => true do |t|
+    t.string   "screenshot_file_name"
+    t.string   "screenshot_content_type"
+    t.integer  "screenshot_file_size"
+    t.datetime "screenshot_updated_at"
+    t.integer  "pin_id"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"

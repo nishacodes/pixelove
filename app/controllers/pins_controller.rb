@@ -33,7 +33,8 @@ class PinsController < ApplicationController
   # GET /pins/new
   # GET /pins/new.json
   def new
-    @pin = current_user.pins.new
+    @pin = current_user.pins.new 
+    5.times { @pin.screenshots.build }
   
 
     respond_to do |format|
@@ -45,7 +46,8 @@ class PinsController < ApplicationController
   # GET /pins/1/edit
   def edit
     @pin = current_user.pins.find(params[:id])
-
+    5.times { @pin.screenshots.build }
+   
   end
 
   # POST /pins

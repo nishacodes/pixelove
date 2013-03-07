@@ -4,12 +4,12 @@ one:
   screenshot_file_name: MyString
   screenshot_content_type: MyString
   screenshot_file_size: 1
-  screenshot_updated_at: 2013-02-28 17:50:52
+  screenshot_updated_at: 2013-03-04 20:12:30
   pin_id: 1
 
 two:
   screenshot_file_name: MyString
   screenshot_content_type: MyString
   screenshot_file_size: 1
-  screenshot_updated_at: 2013-02-28 17:50:52
+  screenshot_updated_at: 2013-03-04 20:12:30
   pin_id: 1
